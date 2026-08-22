@@ -1,0 +1,843 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "COMIDA PERUANA",
+      "parent_id": null,
+      "subcategories": [
+        { "name": "Entradas" },
+        { "name": "Ensaladas" },
+        { "name": "Platos Vegetarianos" },
+        { "name": "Pastas" },
+        { "name": "Platos de Fondo" },
+        { "name": "Ceviches" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "SUSHI",
+      "parent_id": null,
+      "subcategories": [
+        { "name": "Rolls Vegetarianos" },
+        { "name": "Especial Roll" },
+        { "name": "Filadelfia" },
+        { "name": "Tempura" },
+        { "name": "Nikkei" },
+        { "name": "Platos Japoneses" },
+        { "name": "Hosomaki" },
+        { "name": "Nigiri" },
+        { "name": "Sashimi" },
+        { "name": "Sin Arroz" },
+        { "name": "Para Acompañar" },
+        { "name": "Gyosas" },
+        { "name": "California Rolls" },
+        { "name": "Colaciones" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "PROMOCIONES",
+      "parent_id": null,
+      "subcategories": [
+        { "name": "Promociones" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "BEBIDAS",
+      "parent_id": null,
+      "subcategories": [
+        { "name": "Bebidas" },
+        { "name": "Jugos" }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "name": "10. CHICHARRÓN DE CALAMAR",
+      "description": "7 calamares crujientes con salsa acevichada",
+      "price": 8000,
+      "category": "Entradas"
+    },
+    {
+      "name": "8. LECHE DE TIGRE – PESCADO",
+      "description": "Jugo de ceviche y trozos de pescado con cebolla morada",
+      "price": 6900,
+      "category": "Entradas"
+    },
+    {
+      "name": "11. CAMARONES APANADOS",
+      "description": "6 camarones apanados con salsa acevichada",
+      "price": 8500,
+      "category": "Entradas"
+    },
+    {
+      "name": "1. CAUSA ACEVICHADA DE PESCADO",
+      "description": "Papa aliñada al ají amarillo con limón, bañada con ceviche",
+      "price": 10500,
+      "category": "Entradas"
+    },
+    {
+      "name": "3. ANTICUCHO DE POLLO",
+      "description": "3 brochetas de pollo marinadas, papas doradas y salsa huancaína",
+      "price": 9000,
+      "category": "Entradas"
+    },
+    {
+      "name": "7. PULPO AL OLIVO",
+      "description": "Láminas de pulpo marinadas en salsa olivada",
+      "price": 11000,
+      "category": "Entradas"
+    },
+    {
+      "name": "2. CAUSA ACEVICHADA DE SALMÓN",
+      "description": "Papa con ají amarillo y limón, bañada con ceviche salmón",
+      "price": 12500,
+      "category": "Entradas"
+    },
+    {
+      "name": "38. ENSALADA CESAR",
+      "description": "",
+      "price": 7900,
+      "category": "Ensaladas"
+    },
+    {
+      "name": "39. ENSALADA DE CAMARONES",
+      "description": "",
+      "price": 8500,
+      "category": "Ensaladas"
+    },
+    {
+      "name": "40. ENSALADA DE LOMO",
+      "description": "",
+      "price": 8800,
+      "category": "Ensaladas"
+    },
+    {
+      "name": "36. CEVICHE DE CHAMPIÑÓN",
+      "description": "",
+      "price": 7900,
+      "category": "Platos Vegetarianos"
+    },
+    {
+      "name": "37. TALLARINES VEGETARIANOS",
+      "description": "",
+      "price": 7600,
+      "category": "Platos Vegetarianos"
+    },
+    {
+      "name": "29. FETUCCINI A LA HUANCAINA CON LOMO SALTADO",
+      "description": "",
+      "price": 13000,
+      "category": "Pastas"
+    },
+    {
+      "name": "30. FETUCCINI SALTADO DE LOMO",
+      "description": "",
+      "price": 11900,
+      "category": "Pastas"
+    },
+    {
+      "name": "31. FETUCCINI SALTADO DE POLLO",
+      "description": "",
+      "price": 9900,
+      "category": "Pastas"
+    },
+    {
+      "name": "32. FETUCCINI A LA HUANCAINA CON CAMARONES",
+      "description": "",
+      "price": 11500,
+      "category": "Pastas"
+    },
+    {
+      "name": "33. FETUCCINI AL PESTO CON LOMO",
+      "description": "",
+      "price": 11900,
+      "category": "Pastas"
+    },
+    {
+      "name": "34. FETUCCINI SALTADO DE CAMARONES",
+      "description": "",
+      "price": 11600,
+      "category": "Pastas"
+    },
+    {
+      "name": "18. AJÍ DE GALLINA",
+      "description": "Ají de gallina acompañado de papas, arroz y aceituna",
+      "price": 9800,
+      "category": "Platos de Fondo"
+    },
+    {
+      "name": "17. LOMO SALTADO",
+      "description": "Trozos de carne, cebolla morada y tomate con arroz",
+      "price": 12800,
+      "category": "Platos de Fondo"
+    },
+    {
+      "name": "20. CHAUFA DE MARISCOS",
+      "description": "Arroz con camarón, pulpo, calamar, cebolla, huevo y pimiento",
+      "price": 11400,
+      "category": "Platos de Fondo"
+    },
+    {
+      "name": "22. ARROZ CON MARISCOS CRIOLLO",
+      "description": "Arroz húmedo con mariscos y zarza criolla",
+      "price": 11600,
+      "category": "Platos de Fondo"
+    },
+    {
+      "name": "26. PESCADO A LO MACHO",
+      "description": "Reineta con salsa de mariscos, papas doradas y arroz",
+      "price": 13000,
+      "category": "Platos de Fondo"
+    },
+    {
+      "name": "25. SALMÓN A LA PLANCHA",
+      "description": "Salmón con vegetales salteados en salsa soya",
+      "price": 13000,
+      "category": "Platos de Fondo"
+    },
+    {
+      "name": "28. PULPO A LA PARRILLA",
+      "description": "Pulpo marinado en salsa anticuchera con verduras y papas",
+      "price": 15900,
+      "category": "Platos de Fondo"
+    },
+    {
+      "name": "23. MAR Y TIERRA",
+      "description": "Lomo, camarones, cebolla y tomate con sésamo",
+      "price": 12900,
+      "category": "Platos de Fondo"
+    },
+    {
+      "name": "21. CHAUFA AEROPUERTO",
+      "description": "Arroz con pollo, cebolla, huevo y pimiento en salsa sillao",
+      "price": 11200,
+      "category": "Platos de Fondo"
+    },
+    {
+      "name": "24. CAMARONES SALTADOS",
+      "description": "Camarones, cebolla, tomate con papas fritas y arroz",
+      "price": 10900,
+      "category": "Platos de Fondo"
+    },
+    {
+      "name": "19. CHAUFA DE POLLO",
+      "description": "Arroz con pollo, cebolla, huevo y pimiento en salsa sillao",
+      "price": 9900,
+      "category": "Platos de Fondo"
+    },
+    {
+      "name": "27. RISOTTO CON LOMO SALTADO",
+      "description": "Lomo saltado con risoto al ají amarillo",
+      "price": 13900,
+      "category": "Platos de Fondo"
+    },
+    {
+      "name": "28.5. ATUN A LA PLANCHA",
+      "description": "Atún con verduras salteadas y papas doradas",
+      "price": 11900,
+      "category": "Platos de Fondo"
+    },
+    {
+      "name": "9. CHAUFA DE CARNE",
+      "description": "Arroz con carne, cebolla, huevo y pimiento en salsa sillao",
+      "price": 10900,
+      "category": "Platos de Fondo"
+    },
+    {
+      "name": "12. CEVICHE DE PESCADO (DEL DÍA)",
+      "description": "Ceviche peruano con camote y choclo",
+      "price": 12000,
+      "category": "Ceviches"
+    },
+    {
+      "name": "16. TIRADITO DE REINETA",
+      "description": "Láminas de reineta en leche de tigre con ají amarillo",
+      "price": 10000,
+      "category": "Ceviches"
+    },
+    {
+      "name": "15. JALEA MIXTA",
+      "description": "Pescado empanizado y mariscos con ceviche y salsa tártara",
+      "price": 14600,
+      "category": "Ceviches"
+    },
+    {
+      "name": "14. CEVICHE MIXTO",
+      "description": "Ceviche de pescado, camarones y pulpo",
+      "price": 13500,
+      "category": "Ceviches"
+    },
+    {
+      "name": "17. CEVICHE HAZUKI",
+      "description": "Ceviche de pescado con chicharrón de calamar",
+      "price": 13600,
+      "category": "Ceviches"
+    },
+    {
+      "name": "13. CEVICHE SALMÓN",
+      "description": "Ceviche de salmón con camote, choclo y cancha",
+      "price": 14000,
+      "category": "Ceviches"
+    },
+    {
+      "name": "9. Cubierto en palta",
+      "description": "3 ingredientes: palmito, choclo, palta, pepino, champiñón, nuez, espárrago, pimentón",
+      "price": 4800,
+      "category": "Rolls Vegetarianos"
+    },
+    {
+      "name": "10. Apanado en panko",
+      "description": "3 ingredientes: palmito, choclo, palta, pepino, champiñón, nuez, espárrago, pimentón",
+      "price": 4400,
+      "category": "Rolls Vegetarianos"
+    },
+    {
+      "name": "8. Envuelto en Sésamo, Cibullet",
+      "description": "3 ingredientes: palmito, choclo, palta, pepino, champiñón, nuez, espárrago, pimentón",
+      "price": 4200,
+      "category": "Rolls Vegetarianos"
+    },
+    {
+      "name": "11. Cubierto en Queso crema",
+      "description": "3 ingredientes: palmito, choclo, palta, pepino, champiñón, nuez, espárrago, pimentón",
+      "price": 4500,
+      "category": "Rolls Vegetarianos"
+    },
+    {
+      "name": "13. SAKE CHESSE ROLLS",
+      "description": "Salmón, queso y cebollín",
+      "price": 5400,
+      "category": "Especial Roll"
+    },
+    {
+      "name": "18. TAKO SPICY ROLL",
+      "description": "Pulpo, salsa spicy y queso crema",
+      "price": 5500,
+      "category": "Especial Roll"
+    },
+    {
+      "name": "14. TORY ROLL",
+      "description": "Pollo, queso crema y cebollín",
+      "price": 4900,
+      "category": "Especial Roll"
+    },
+    {
+      "name": "15. MAKI ROLL",
+      "description": "Kanikama, cebollín y queso",
+      "price": 4800,
+      "category": "Especial Roll"
+    },
+    {
+      "name": "16. SPICY TEMPURA ROLL",
+      "description": "Queso crema, camarón tempura, salsa spicy y cebollín",
+      "price": 5200,
+      "category": "Especial Roll"
+    },
+    {
+      "name": "17. SABI CHESSE ROLL",
+      "description": "Queso crema, camarón y salmón",
+      "price": 5400,
+      "category": "Especial Roll"
+    },
+    {
+      "name": "19. MAGURO ROLL",
+      "description": "Palta, atún y queso crema",
+      "price": 5400,
+      "category": "Especial Roll"
+    },
+    {
+      "name": "20. KIOTO ROLL",
+      "description": "Queso crema, salmón ahumado y cebollín",
+      "price": 5500,
+      "category": "Especial Roll"
+    },
+    {
+      "name": "12. EBI CHESSE",
+      "description": "Camarón, queso crema y cebollín",
+      "price": 5200,
+      "category": "Especial Roll"
+    },
+    {
+      "name": "22. FILADELFIA EBI",
+      "description": "Palta y camarón",
+      "price": 5400,
+      "category": "Filadelfia"
+    },
+    {
+      "name": "23. FILADELFIA SAKE",
+      "description": "Salmón y palta",
+      "price": 5600,
+      "category": "Filadelfia"
+    },
+    {
+      "name": "24. FILADELFIA TAKO",
+      "description": "Pulpo y palta",
+      "price": 5500,
+      "category": "Filadelfia"
+    },
+    {
+      "name": "25. FILADELFIA EBI TEMPURA",
+      "description": "Camarón tempura y palta",
+      "price": 5700,
+      "category": "Filadelfia"
+    },
+    {
+      "name": "21. FILADELFIA TORY",
+      "description": "Palta y pollo",
+      "price": 5200,
+      "category": "Filadelfia"
+    },
+    {
+      "name": "26. TORY TORY TEMPURA",
+      "description": "Pollo, queso crema y cebollín",
+      "price": 5000,
+      "category": "Tempura"
+    },
+    {
+      "name": "28. MIX TEMPURA",
+      "description": "Camarón, salmón y queso crema en nori tempurizado",
+      "price": 5900,
+      "category": "Tempura"
+    },
+    {
+      "name": "29. EBI CHESSE TEMPURA",
+      "description": "Camarón, queso crema y cebollín",
+      "price": 5300,
+      "category": "Tempura"
+    },
+    {
+      "name": "30. SAKE TEMPURA",
+      "description": "Salmón y queso crema",
+      "price": 5600,
+      "category": "Tempura"
+    },
+    {
+      "name": "31. TEMPURA TACO ROLL",
+      "description": "Pulpo y queso crema",
+      "price": 5900,
+      "category": "Tempura"
+    },
+    {
+      "name": "32. TEMPURA KOBE ROLL",
+      "description": "Camarón, salmón y queso crema",
+      "price": 6000,
+      "category": "Tempura"
+    },
+    {
+      "name": "33. OTATE CHESSE",
+      "description": "Ostión y queso crema",
+      "price": 5800,
+      "category": "Tempura"
+    },
+    {
+      "name": "34. JAIBA TEMPURA",
+      "description": "Jaibas y queso crema",
+      "price": 6000,
+      "category": "Tempura"
+    },
+    {
+      "name": "35 OLIVO TEMPURA",
+      "description": "Camarón furai, queso crema con tartar de pulpo al olivo",
+      "price": 6200,
+      "category": "Tempura"
+    },
+    {
+      "name": "36. ALMOND FURAI",
+      "description": "Pollo, queso crema y almendras tostadas",
+      "price": 5900,
+      "category": "Tempura"
+    },
+    {
+      "name": "37. BEEF TEMPURA",
+      "description": "Carne, queso crema y cebollín",
+      "price": 6500,
+      "category": "Tempura"
+    },
+    {
+      "name": "27. HAZUKI TEMPURA",
+      "description": "Queso crema, salmón y cebollín en salmón tempurizado",
+      "price": 5900,
+      "category": "Tempura"
+    },
+    {
+      "name": "46. REINETA ROLL",
+      "description": "Camarón, pulpo y cebollín cubierto en reineta con salsa",
+      "price": 6500,
+      "category": "Nikkei"
+    },
+    {
+      "name": "40. TORY CRISPI NIKKEI",
+      "description": "Pollo furai, queso crema y cebollín con papas y salsa",
+      "price": 5500,
+      "category": "Nikkei"
+    },
+    {
+      "name": "43. MANGO TANGO ROLL",
+      "description": "Camarón tempura y queso crema bañado en salsa teriyaki",
+      "price": 5900,
+      "category": "Nikkei"
+    },
+    {
+      "name": "44. BEEF ROLL",
+      "description": "Lomo, palta y queso crema envuelto en palta",
+      "price": 6000,
+      "category": "Nikkei"
+    },
+    {
+      "name": "45. ACEVICHADO SAKE",
+      "description": "Salmón y palta cubierto en salmón con salsa acevichada",
+      "price": 6600,
+      "category": "Nikkei"
+    },
+    {
+      "name": "47. ACEVICHADO HAZUKI",
+      "description": "Camarón tempura y palta cubierto en atún acevichado",
+      "price": 6600,
+      "category": "Nikkei"
+    },
+    {
+      "name": "48. MIÑON EBI",
+      "description": "Camarón tempura, cebollín y queso con salsa miñon",
+      "price": 6300,
+      "category": "Nikkei"
+    },
+    {
+      "name": "42. LOMO SALTADO ROLL",
+      "description": "Pollo furai, lechuga y palta con lomo saltado y salsa",
+      "price": 6200,
+      "category": "Nikkei"
+    },
+    {
+      "name": "38. NIKKEI ROLL",
+      "description": "Camarón tempura, queso crema y palta con tartar de pulpo",
+      "price": 6300,
+      "category": "Nikkei"
+    },
+    {
+      "name": "39. MAR Y TIERRA NIKKEI",
+      "description": "Queso crema, cebollín y camarón tempura con lomo",
+      "price": 6600,
+      "category": "Nikkei"
+    },
+    {
+      "name": "41. CEVICHE ROLL",
+      "description": "Camarón furai y palta cubierto con ceviche de pescado",
+      "price": 6500,
+      "category": "Nikkei"
+    },
+    {
+      "name": "49. GOHAN SALMON",
+      "description": "Base de arroz, salmón, queso y palta",
+      "price": 8500,
+      "category": "Platos Japoneses"
+    },
+    {
+      "name": "52. GOHAN VEGETARIANO",
+      "description": "Champiñón, choclo, palta y cebollín",
+      "price": 6800,
+      "category": "Platos Japoneses"
+    },
+    {
+      "name": "50. GOHAN EBI",
+      "description": "Arroz de sushi con camarón, palta, queso, cebollín y sésamo",
+      "price": 8000,
+      "category": "Platos Japoneses"
+    },
+    {
+      "name": "51. GOHAN POLLO",
+      "description": "Arroz blanco con pollo, cebollín, palta, queso y sésamo",
+      "price": 7000,
+      "category": "Platos Japoneses"
+    },
+    {
+      "name": "53.MAGURO MAKI",
+      "description": "Atún y palta",
+      "price": 4200,
+      "category": "Hosomaki"
+    },
+    {
+      "name": "54. TORY MAKI",
+      "description": "Pollo y palta",
+      "price": 4500,
+      "category": "Hosomaki"
+    },
+    {
+      "name": "55. SAKE CHESSE MAKI",
+      "description": "Salmón y queso crema",
+      "price": 4600,
+      "category": "Hosomaki"
+    },
+    {
+      "name": "56. EBI CHESSE MAKI",
+      "description": "Camarón y queso crema",
+      "price": 4700,
+      "category": "Hosomaki"
+    },
+    {
+      "name": "57.NIGIRI EBI",
+      "description": "Camarón",
+      "price": 4000,
+      "category": "Nigiri"
+    },
+    {
+      "name": "58.NIGIRI SAKE",
+      "description": "Salmón",
+      "price": 4200,
+      "category": "Nigiri"
+    },
+    {
+      "name": "59. NIGIRI MAGURO",
+      "description": "Atún",
+      "price": 4000,
+      "category": "Nigiri"
+    },
+    {
+      "name": "60. NIGIRI ACEVICHADO",
+      "description": "Cubierto de salmón y salsa acevichada",
+      "price": 4500,
+      "category": "Nigiri"
+    },
+    {
+      "name": "61. SAKE SALMÓN",
+      "description": "7 cortes de salmón",
+      "price": 7900,
+      "category": "Sashimi"
+    },
+    {
+      "name": "62. TAKO PULPO",
+      "description": "7 cortes de pulpo",
+      "price": 8000,
+      "category": "Sashimi"
+    },
+    {
+      "name": "63. MAGURO (ATÚN)",
+      "description": "7 cortes de atún",
+      "price": 7800,
+      "category": "Sashimi"
+    },
+    {
+      "name": "65.ORIENTAL HAZUKI",
+      "description": "Champiñón, queso crema, cebollín y salmón envuelto en palta",
+      "price": 7800,
+      "category": "Sin Arroz"
+    },
+    {
+      "name": "68. FILADELFIA TUNA SAKE",
+      "description": "Atún, salmón y queso crema envuelto en queso crema",
+      "price": 8200,
+      "category": "Sin Arroz"
+    },
+    {
+      "name": "69. VEGETARIANO AVOCADO",
+      "description": "Palta, palmito, champiñón y pepino envuelto en palta",
+      "price": 7500,
+      "category": "Sin Arroz"
+    },
+    {
+      "name": "75. TEMPURA TORY FURAI",
+      "description": "Pollo furai, queso crema, palta y cebollín envuelto en palta",
+      "price": 7800,
+      "category": "Sin Arroz"
+    },
+    {
+      "name": "64. AVOCADO HAZUKI",
+      "description": "Salmón, camarón, queso crema, palta y cebollín envuelto en palta",
+      "price": 7900,
+      "category": "Sin Arroz"
+    },
+    {
+      "name": "67. TEMPURA EBI FURAI",
+      "description": "Camarón furai, queso crema, palta y cebollín envuelto en palta",
+      "price": 8000,
+      "category": "Sin Arroz"
+    },
+    {
+      "name": "72. YAKIMESHI EXPRESS",
+      "description": "Arroz salteado con pollo, verdura y cebollín",
+      "price": 6000,
+      "category": "Para Acompañar"
+    },
+    {
+      "name": "70. TEMPURA MIXTO",
+      "description": "3 camarones y verduras rebozadas",
+      "price": 4900,
+      "category": "Para Acompañar"
+    },
+    {
+      "name": "71. YAKIMESHI ESPECIAL",
+      "description": "Arroz salteado con pollo, verdura, cebollín, sésamo y camarón",
+      "price": 6500,
+      "category": "Para Acompañar"
+    },
+    {
+      "name": "82. GYOSAS DE CERDO",
+      "description": "5 unidades",
+      "price": 4400,
+      "category": "Gyosas"
+    },
+    {
+      "name": "73. GYOSAS DE POLLO",
+      "description": "5 unidades",
+      "price": 4200,
+      "category": "Gyosas"
+    },
+    {
+      "name": "81. GYOSAS DE VERDURA",
+      "description": "5 unidades",
+      "price": 3900,
+      "category": "Gyosas"
+    },
+    {
+      "name": "76. GYOSAS DE CAMARÓN",
+      "description": "5 unidades",
+      "price": 4500,
+      "category": "Gyosas"
+    },
+    {
+      "name": "1. CALIFORNIA EBI CHESSE",
+      "description": "Palta, camarón y queso crema",
+      "price": 4200,
+      "category": "California Rolls"
+    },
+    {
+      "name": "2. CALIFORNIA SAKE CHESSE",
+      "description": "Palta, queso crema y salmón",
+      "price": 4600,
+      "category": "California Rolls"
+    },
+    {
+      "name": "3. CALIFORNIA EBI TEMPURA",
+      "description": "Queso, salsa spicy y camarón tempura",
+      "price": 4400,
+      "category": "California Rolls"
+    },
+    {
+      "name": "4. CALIFORNIA TORY CHESSE",
+      "description": "Pollo, queso crema y palta",
+      "price": 4300,
+      "category": "California Rolls"
+    },
+    {
+      "name": "5. CALIFORNIA SAKE FURAI",
+      "description": "Salmón furai, queso crema y palta",
+      "price": 4600,
+      "category": "California Rolls"
+    },
+    {
+      "name": "6. CALIFORNIA KOBE",
+      "description": "Salmón, camarón y palta",
+      "price": 4900,
+      "category": "California Rolls"
+    },
+    {
+      "name": "7. CALIFORNIA MAGURO",
+      "description": "Atún y palta",
+      "price": 4800,
+      "category": "California Rolls"
+    },
+    {
+      "name": "POLLO A LA PLANCHA",
+      "description": "2 acompañamientos: arroz, papas fritas o ensalada",
+      "price": 8500,
+      "category": "Colaciones"
+    },
+    {
+      "name": "REINETA A LA PLANCHA",
+      "description": "2 acompañamientos",
+      "price": 8800,
+      "category": "Colaciones"
+    },
+    {
+      "name": "DUO MARINO",
+      "description": "Chicharrón con ceviche o chaufá",
+      "price": 9000,
+      "category": "Colaciones"
+    },
+    {
+      "name": "TRIO MARINO",
+      "description": "Arroz con mariscos, ceviche y chicharrón",
+      "price": 10000,
+      "category": "Colaciones"
+    },
+    {
+      "name": "Promo 40 Piezas Nikkei",
+      "description": "",
+      "price": 19990,
+      "category": "Promociones"
+    },
+    {
+      "name": "Promo 40 Piezas",
+      "description": "",
+      "price": 17990,
+      "category": "Promociones"
+    },
+    {
+      "name": "Promo 30 Piezas",
+      "description": "",
+      "price": 14990,
+      "category": "Promociones"
+    },
+    {
+      "name": "Promo 40 Piezas Vegetariana",
+      "description": "",
+      "price": 14990,
+      "category": "Promociones"
+    },
+    {
+      "name": "Promo 60 Piezas",
+      "description": "",
+      "price": 22990,
+      "category": "Promociones"
+    },
+    {
+      "name": "Promo 40 Piezas Tempura",
+      "description": "",
+      "price": 16990,
+      "category": "Promociones"
+    },
+    {
+      "name": "Jugo de mango",
+      "description": "",
+      "price": 3000,
+      "category": "Jugos"
+    },
+    {
+      "name": "Jugo de frutilla",
+      "description": "",
+      "price": 3000,
+      "category": "Jugos"
+    },
+    {
+      "name": "Jugo de Piña",
+      "description": "",
+      "price": 3000,
+      "category": "Jugos"
+    },
+    {
+      "name": "Chicha morada",
+      "description": "",
+      "price": 3000,
+      "category": "Bebidas"
+    },
+    {
+      "name": "Limonada",
+      "description": "",
+      "price": 3500,
+      "category": "Bebidas"
+    },
+    {
+      "name": "Té",
+      "description": "",
+      "price": 1200,
+      "category": "Bebidas"
+    },
+    {
+      "name": "Café",
+      "description": "",
+      "price": 1500,
+      "category": "Bebidas"
+    }
+  ]
+}

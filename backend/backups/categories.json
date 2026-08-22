@@ -1,0 +1,193 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "COMIDA PERUANA",
+      "parent_id": null,
+      "created_at": "2026-08-21T21:34:28.814Z",
+      "updated_at": "2026-08-21T21:34:28.814Z"
+    },
+    {
+      "id": 2,
+      "name": "Entradas",
+      "parent_id": 1,
+      "created_at": "2026-08-21T21:34:28.821Z",
+      "updated_at": "2026-08-21T21:34:28.821Z"
+    },
+    {
+      "id": 3,
+      "name": "Ensaladas",
+      "parent_id": 1,
+      "created_at": "2026-08-21T21:34:28.824Z",
+      "updated_at": "2026-08-21T21:34:28.824Z"
+    },
+    {
+      "id": 4,
+      "name": "Platos Vegetarianos",
+      "parent_id": 1,
+      "created_at": "2026-08-21T21:34:28.827Z",
+      "updated_at": "2026-08-21T21:34:28.827Z"
+    },
+    {
+      "id": 5,
+      "name": "Pastas",
+      "parent_id": 1,
+      "created_at": "2026-08-21T21:34:28.830Z",
+      "updated_at": "2026-08-21T21:34:28.830Z"
+    },
+    {
+      "id": 6,
+      "name": "Platos de Fondo",
+      "parent_id": 1,
+      "created_at": "2026-08-21T21:34:28.833Z",
+      "updated_at": "2026-08-21T21:34:28.833Z"
+    },
+    {
+      "id": 7,
+      "name": "Ceviches",
+      "parent_id": 1,
+      "created_at": "2026-08-21T21:34:28.836Z",
+      "updated_at": "2026-08-21T21:34:28.836Z"
+    },
+    {
+      "id": 8,
+      "name": "SUSHI",
+      "parent_id": null,
+      "created_at": "2026-08-21T21:34:28.839Z",
+      "updated_at": "2026-08-21T21:34:28.839Z"
+    },
+    {
+      "id": 9,
+      "name": "Rolls Vegetarianos",
+      "parent_id": 8,
+      "created_at": "2026-08-21T21:34:28.842Z",
+      "updated_at": "2026-08-21T21:34:28.842Z"
+    },
+    {
+      "id": 10,
+      "name": "Especial Roll",
+      "parent_id": 8,
+      "created_at": "2026-08-21T21:34:28.845Z",
+      "updated_at": "2026-08-21T21:34:28.845Z"
+    },
+    {
+      "id": 11,
+      "name": "Filadelfia",
+      "parent_id": 8,
+      "created_at": "2026-08-21T21:34:28.848Z",
+      "updated_at": "2026-08-21T21:34:28.848Z"
+    },
+    {
+      "id": 12,
+      "name": "Tempura",
+      "parent_id": 8,
+      "created_at": "2026-08-21T21:34:28.851Z",
+      "updated_at": "2026-08-21T21:34:28.851Z"
+    },
+    {
+      "id": 13,
+      "name": "Nikkei",
+      "parent_id": 8,
+      "created_at": "2026-08-21T21:34:28.854Z",
+      "updated_at": "2026-08-21T21:34:28.854Z"
+    },
+    {
+      "id": 14,
+      "name": "Platos Japoneses",
+      "parent_id": 8,
+      "created_at": "2026-08-21T21:34:28.856Z",
+      "updated_at": "2026-08-21T21:34:28.856Z"
+    },
+    {
+      "id": 15,
+      "name": "Hosomaki",
+      "parent_id": 8,
+      "created_at": "2026-08-21T21:34:28.858Z",
+      "updated_at": "2026-08-21T21:34:28.858Z"
+    },
+    {
+      "id": 16,
+      "name": "Nigiri",
+      "parent_id": 8,
+      "created_at": "2026-08-21T21:34:28.864Z",
+      "updated_at": "2026-08-21T21:34:28.864Z"
+    },
+    {
+      "id": 17,
+      "name": "Sashimi",
+      "parent_id": 8,
+      "created_at": "2026-08-21T21:34:28.867Z",
+      "updated_at": "2026-08-21T21:34:28.867Z"
+    },
+    {
+      "id": 18,
+      "name": "Sin Arroz",
+      "parent_id": 8,
+      "created_at": "2026-08-21T21:34:28.869Z",
+      "updated_at": "2026-08-21T21:34:28.869Z"
+    },
+    {
+      "id": 19,
+      "name": "Para Acompañar",
+      "parent_id": 8,
+      "created_at": "2026-08-21T21:34:28.871Z",
+      "updated_at": "2026-08-21T21:34:28.871Z"
+    },
+    {
+      "id": 20,
+      "name": "Gyosas",
+      "parent_id": 8,
+      "created_at": "2026-08-21T21:34:28.873Z",
+      "updated_at": "2026-08-21T21:34:28.874Z"
+    },
+    {
+      "id": 21,
+      "name": "California Rolls",
+      "parent_id": 8,
+      "created_at": "2026-08-21T21:34:28.875Z",
+      "updated_at": "2026-08-21T21:34:28.876Z"
+    },
+    {
+      "id": 22,
+      "name": "Colaciones",
+      "parent_id": 8,
+      "created_at": "2026-08-21T21:34:28.877Z",
+      "updated_at": "2026-08-21T21:34:28.877Z"
+    },
+    {
+      "id": 23,
+      "name": "PROMOCIONES",
+      "parent_id": null,
+      "created_at": "2026-08-21T21:34:28.880Z",
+      "updated_at": "2026-08-21T21:34:28.880Z"
+    },
+    {
+      "id": 24,
+      "name": "Promociones",
+      "parent_id": 23,
+      "created_at": "2026-08-21T21:34:28.882Z",
+      "updated_at": "2026-08-21T21:34:28.882Z"
+    },
+    {
+      "id": 25,
+      "name": "BEBIDAS",
+      "parent_id": null,
+      "created_at": "2026-08-21T21:34:28.885Z",
+      "updated_at": "2026-08-21T21:34:28.885Z"
+    },
+    {
+      "id": 26,
+      "name": "Bebidas",
+      "parent_id": 25,
+      "created_at": "2026-08-21T21:34:28.887Z",
+      "updated_at": "2026-08-21T21:34:28.887Z"
+    },
+    {
+      "id": 27,
+      "name": "Jugos",
+      "parent_id": 25,
+      "created_at": "2026-08-21T21:34:28.889Z",
+      "updated_at": "2026-08-21T21:34:28.889Z"
+    }
+  ]
+}
