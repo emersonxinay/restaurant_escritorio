@@ -5,8 +5,8 @@ import { fileURLToPath } from 'url';
 
 import fs from 'fs';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+
+
 
 dotenv.config();
 
@@ -25,6 +25,10 @@ if (userDbPath) {
   }
 
   if (shouldCopy && fs.existsSync(defaultDbPath)) {
+    const userDbDir = path.dirname(userDbPath);
+    if (!fs.existsSync(userDbDir)) {
+      fs.mkdirSync(userDbDir, { recursive: true });
+    }
     fs.copyFileSync(defaultDbPath, userDbPath);
     console.log(`Copied initial database from ${defaultDbPath} to ${userDbPath}`);
   }

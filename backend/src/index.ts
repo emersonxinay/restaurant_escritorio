@@ -7,9 +7,15 @@ import sequelize from './config/database';
 import { specs } from './config/swagger';
 import { setupAssociations } from './models/index';
 import Reservation from './models/Reservation';
+import User from './models/User';
 import { Op } from 'sequelize';
 import { createServer } from 'http';
 import { socketService } from './services/socket';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+
+
 
 // Import routes
 import authRoutes from './routes/auth';
@@ -50,6 +56,9 @@ app.use(express.urlencoded({ extended: true }));
 // Serve uploaded files with proper CORS headers
 app.use('/uploads', cors(), express.static(process.env.UPLOAD_DIR || 'uploads'));
 
+// Serve React Frontend static files
+app.use(express.static(path.join(__dirname, '../../public')));
+
 // Swagger documentation
 app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(specs, {
   customCss: '.swagger-ui .topbar { display: none }',
@@ -83,9 +92,14 @@ app.get('/api-docs', (req, res) => {
   res.redirect('/api/docs');
 });
 
-// 404 handler
-app.use((req, res) => {
+// 404 handler for API routes
+app.use('/api', (req, res) => {
   res.status(404).json({ message: 'Route not found' });
+});
+
+// React Router fallback (for all non-API routes)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../../public/index.html'));
 });
 
 // Error handler
@@ -108,6 +122,18 @@ sequelize
   })
   .then(() => {
     console.log('✓ Database models synchronized');
+    
+    
+    // Check and seed admin user if not exists
+    User.findOne({ where: { role: 'admin' } }).then(async (adminUser) => {
+      if (!adminUser) {
+        console.log('No admin user found. Creating default admin...');
+        const admin = await User.create({ username: 'admin', password_hash: '', role: 'admin' });
+        await admin.setPassword('admin123');
+        await admin.save();
+        console.log('Default admin created: admin / admin123');
+      }
+    }).catch(err => console.error('Error seeding admin:', err));
     
     // Start background job to check no-show reservations
     const checkNoShowReservations = async () => {
@@ -143,8 +169,8 @@ sequelize
     checkNoShowReservations();
     setInterval(checkNoShowReservations, 15 * 60 * 1000);
 
-    httpServer.listen(PORT, () => {
-      console.log(`✓ Server running on http://localhost:${PORT}`);
+    httpServer.listen(Number(PORT), '0.0.0.0', () => {
+      console.log(`✓ Server running on http://0.0.0.0:${PORT}`);
       console.log(`✓ API Documentation available at http://localhost:${PORT}/api/docs`);
       console.log(`✓ CORS enabled for ${process.env.CORS_ORIGIN}`);
     });
