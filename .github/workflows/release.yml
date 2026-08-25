@@ -1,0 +1,84 @@
+name: "Release"
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+jobs:
+  release:
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [macos-latest, windows-latest]
+    runs-on: ${{ matrix.platform }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          # On macOS, compile for both Apple Silicon (aarch64) and Intel (x86_64) to create a universal binary
+          targets: ${{ matrix.platform == 'macos-latest' && 'aarch64-apple-darwin,x86_64-apple-darwin' || '' }}
+
+      - name: Rust cache
+        uses: swatinem/rust-cache@v2
+        with:
+          workspaces: frontend/src-tauri
+
+      - name: Install Frontend Dependencies
+        working-directory: frontend
+        run: npm install
+
+      - name: Install Backend Dependencies
+        working-directory: backend
+        run: npm install
+
+      - name: Build Backend Sidecar
+        working-directory: backend
+        run: npm run build:bundle
+
+      - name: Prepare Node Sidecar Binaries (macOS)
+        if: matrix.platform == 'macos-latest'
+        run: |
+          mkdir -p frontend/src-tauri/binaries
+          curl -LO https://nodejs.org/dist/v20.11.1/node-v20.11.1-darwin-x64.tar.gz
+          curl -LO https://nodejs.org/dist/v20.11.1/node-v20.11.1-darwin-arm64.tar.gz
+          tar -xzf node-v20.11.1-darwin-x64.tar.gz
+          tar -xzf node-v20.11.1-darwin-arm64.tar.gz
+          cp node-v20.11.1-darwin-x64/bin/node frontend/src-tauri/binaries/node-x86_64-apple-darwin
+          cp node-v20.11.1-darwin-arm64/bin/node frontend/src-tauri/binaries/node-aarch64-apple-darwin
+          chmod +x frontend/src-tauri/binaries/node-*
+
+      - name: Prepare Node Sidecar Binaries (Windows)
+        if: matrix.platform == 'windows-latest'
+        shell: bash
+        run: |
+          mkdir -p frontend/src-tauri/binaries
+          curl -LO https://nodejs.org/dist/v20.11.1/node-v20.11.1-win-x64.zip
+          unzip node-v20.11.1-win-x64.zip
+          cp node-v20.11.1-win-x64/node.exe frontend/src-tauri/binaries/node-x86_64-pc-windows-msvc.exe
+
+      - name: Build Tauri App
+        uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          projectPath: frontend
+          tagName: app-v__VERSION__
+          releaseName: "Hazuki POS v__VERSION__"
+          releaseBody: "Descarga e instala la última versión de Hazuki POS."
+          releaseDraft: true
+          prerelease: false
+          # On macOS, build a universal binary for both Apple Silicon and Intel
+          args: ${{ matrix.platform == 'macos-latest' && '--target universal-apple-darwin' || '' }}

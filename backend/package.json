@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
+    "build:bundle": "esbuild src/index.ts --bundle --platform=node --target=node20 --outfile=dist/backend-bundle.cjs --external:pg-hstore --external:pg --external:mysql2 --external:mariadb --external:tedious --external:sqlite3 --external:mock-aws-s3 --external:nock --external:aws-sdk",
     "start": "node dist/index.js",
     "db:migrate": "sequelize db:migrate",
     "db:migrate:undo": "sequelize db:migrate:undo",
@@ -46,6 +47,7 @@
     "@types/node": "^20.10.6",
     "@types/socket.io": "^3.0.1",
     "@types/swagger-ui-express": "^4.1.6",
+    "esbuild": "^0.28.2",
     "sequelize-cli": "^6.6.2",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
