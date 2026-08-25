@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-primary text-white rounded-lg hover:bg-orange-600 transition font-semibold;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-secondary text-white rounded-lg hover:bg-blue-700 transition font-semibold;
+  }
+
+  .btn-ghost {
+    @apply px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 transition;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition;
+  }
+
+  .badge {
+    @apply inline-block px-3 py-1 bg-primary text-white text-sm font-semibold rounded-full;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .printable-ticket, .printable-ticket * {
+    visibility: visible;
+  }
+  .printable-ticket {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80mm;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Remove browser headers/footers */
+  @page {
+    margin: 0;
+  }
+}
