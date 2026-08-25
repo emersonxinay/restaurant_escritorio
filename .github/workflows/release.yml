@@ -60,6 +60,7 @@ jobs:
           tar -xzf node-v20.11.1-darwin-arm64.tar.gz
           cp node-v20.11.1-darwin-x64/bin/node frontend/src-tauri/binaries/node-x86_64-apple-darwin
           cp node-v20.11.1-darwin-arm64/bin/node frontend/src-tauri/binaries/node-aarch64-apple-darwin
+          lipo -create -output frontend/src-tauri/binaries/node-universal-apple-darwin frontend/src-tauri/binaries/node-x86_64-apple-darwin frontend/src-tauri/binaries/node-aarch64-apple-darwin
           chmod +x frontend/src-tauri/binaries/node-*
 
       - name: Prepare Node Sidecar Binaries (Windows)
