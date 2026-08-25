@@ -7,7 +7,7 @@
     "frontendDist": "../dist",
     "devUrl": "http://localhost:5173",
     "beforeDevCommand": "npm run dev",
-    "beforeBuildCommand": "npm run build && mkdir -p ../backend/public && cp -r dist/* ../backend/public/"
+    "beforeBuildCommand": "npm run build && node copy-dist.js"
   },
   "app": {
     "windows": [
