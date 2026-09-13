@@ -57,7 +57,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/uploads', cors(), express.static(process.env.UPLOAD_DIR || 'uploads'));
 
 // Serve React Frontend static files
-app.use(express.static(path.join(__dirname, '../../public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 // Swagger documentation
 app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(specs, {
@@ -99,7 +99,7 @@ app.use('/api', (req, res) => {
 
 // React Router fallback (for all non-API routes)
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/index.html'));
+  res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
 // Error handler
