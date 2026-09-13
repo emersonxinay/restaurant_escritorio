@@ -10,11 +10,11 @@
     "shell:default",
     {
       "identifier": "shell:allow-execute",
-      "allow": [{ "name": "binaries/node", "sidecar": true }]
+      "allow": [{ "name": "binaries/node", "sidecar": true, "args": true }]
     },
     {
       "identifier": "shell:allow-spawn",
-      "allow": [{ "name": "binaries/node", "sidecar": true }]
+      "allow": [{ "name": "binaries/node", "sidecar": true, "args": true }]
     },
     "fs:default",
     {
