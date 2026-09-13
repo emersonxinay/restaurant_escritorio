@@ -83,5 +83,4 @@ jobs:
           releaseBody: "Descarga e instala la última versión de Hazuki POS."
           releaseDraft: true
           prerelease: false
-          # On macOS, build a universal binary for both Apple Silicon and Intel
-          args: ${{ matrix.platform == 'macos-latest' && '--target universal-apple-darwin' || '' }}
+          args: ''
