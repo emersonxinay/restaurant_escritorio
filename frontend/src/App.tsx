@@ -105,7 +105,7 @@ function App() {
         let isHealthy = false;
         while (retries > 0) {
           try {
-            const res = await fetch('http://localhost:14234/health');
+            const res = await fetch('http://127.0.0.1:14234/health');
             if (res.ok) {
               isHealthy = true;
               break;

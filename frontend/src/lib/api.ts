@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const IS_TAURI = typeof window !== 'undefined' && (!!(window as any).__TAURI_INTERNALS__ || window.location.hostname === 'tauri.localhost' || window.location.protocol === 'tauri:');
-const API_BASE_URL = (import.meta as any).env.VITE_API_URL || (IS_TAURI ? 'http://localhost:14234/api' : `${window.location.origin}/api`);
+const API_BASE_URL = (import.meta as any).env.VITE_API_URL || (IS_TAURI ? 'http://127.0.0.1:14234/api' : `${window.location.origin}/api`);
 console.log('API_BASE_URL configured as:', API_BASE_URL);
 
 const api = axios.create({
